@@ -156,7 +156,7 @@
           <OutArgument x:TypeArguments="x:String">[ste_PrincipleAmoint]</OutArgument>
         </ui:InputDialog.Result>
       </ui:InputDialog>
-      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Acc Holder Name is: &quot;+str_accHolderName+Environment.NewLine+&#xA;&quot;Loan acc Number: &quot;+str_LoanNumber+Environment.NewLine+&#xA;&quot;Loan Amount: &quot;+str_loanAmount+Environment.NewLine+&#xA;&quot;ROI In %: &quot;+str_rate_Of_Interest+Environment.NewLine+&#xA;&quot;Existing account: &quot;+str_existingAccount+Environment.NewLine+&#xA;&quot;Tenure Of loan In months: &quot;+str_Tenure+Environment.NewLine+&#xA;&quot;Principal Amount: &quot;+ste_PrincipleAmoint+Environment.NewLine]" />
+      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box to display msg" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Acc Holder Name is: &quot;+str_accHolderName+Environment.NewLine+&#xA;&quot;Loan acc Number: &quot;+str_LoanNumber+Environment.NewLine+&#xA;&quot;Loan Amount: &quot;+str_loanAmount+Environment.NewLine+&#xA;&quot;ROI In %: &quot;+str_rate_Of_Interest+Environment.NewLine+&#xA;&quot;Existing account: &quot;+str_existingAccount+Environment.NewLine+&#xA;&quot;Tenure Of loan In months: &quot;+str_Tenure+Environment.NewLine+&#xA;&quot;Principal Amount: &quot;+ste_PrincipleAmoint+Environment.NewLine]" />
     </Sequence>
   </Sequence>
 </Activity>
