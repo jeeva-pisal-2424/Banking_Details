@@ -97,7 +97,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1124,3384" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1124,2307" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_bankingDetails" />
     </Sequence.Variables>
@@ -106,7 +106,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="450,3361" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence sap:VirtualizedContainerService.HintSize="450,2284" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="str_accHolderName" />
         <Variable x:TypeArguments="x:String" Name="str_LoanNumber" />
@@ -121,7 +121,6 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dt_bankingDetails]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="416,227" sap2010:WorkflowViewState.IdRef="ReadRange_3" SheetName="Sheet1" WorkbookPath="D:\Robots\Banking_Details\bankingDetails.xlsx" />
       <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Acc Holder Name" sap:VirtualizedContainerService.HintSize="416,275" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Acc Holder Full Name" Title="Loan Applicant Details" TopMost="False">
         <ui:InputDialog.Result>
           <OutArgument x:TypeArguments="x:String">[str_accHolderName]</OutArgument>
@@ -157,11 +156,7 @@
           <OutArgument x:TypeArguments="x:String">[ste_PrincipleAmoint]</OutArgument>
         </ui:InputDialog.Result>
       </ui:InputDialog>
-      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,123" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Acc Holder Name is: &quot;+str_accHolderName+Environment.NewLine+&#xA;&quot;Loan acc Number: &quot;+str_LoanNumber+Environment.NewLine+&#xA;&quot;Loan Amount: &quot;+str_loanAmount+Environment.NewLine+&#xA;&quot;ROI In %: &quot;+str_rate_Of_Interest+Environment.NewLine+&#xA;&quot;Existing account: &quot;+str_existingAccount+Environment.NewLine+&#xA;&quot;Tenure Of loan In months: &quot;+str_Tenure+Environment.NewLine+&#xA;&quot;Principal Amount: &quot;+ste_PrincipleAmoint+Environment.NewLine]" />
-      <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{str_accHolderName,str_LoanNumber,str_LoanNumber,str_rate_Of_Interest,str_existingAccount,str_Tenure,ste_PrincipleAmoint}]" DataTable="[dt_bankingDetails]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="416,221" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Data captured in a row&quot;]" />
-      <ui:WriteRange StartingCell="{x:Null}" DataTable="[dt_bankingDetails]" DisplayName="Write Range Workbook, added data in sheet" sap:VirtualizedContainerService.HintSize="416,279" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="D:\Robots\Banking_Details\bankingDetails.xlsx" />
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Data added in excel sheet successfully&quot;]" />
+      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Acc Holder Name is: &quot;+str_accHolderName+Environment.NewLine+&#xA;&quot;Loan acc Number: &quot;+str_LoanNumber+Environment.NewLine+&#xA;&quot;Loan Amount: &quot;+str_loanAmount+Environment.NewLine+&#xA;&quot;ROI In %: &quot;+str_rate_Of_Interest+Environment.NewLine+&#xA;&quot;Existing account: &quot;+str_existingAccount+Environment.NewLine+&#xA;&quot;Tenure Of loan In months: &quot;+str_Tenure+Environment.NewLine+&#xA;&quot;Principal Amount: &quot;+ste_PrincipleAmoint+Environment.NewLine]" />
     </Sequence>
   </Sequence>
 </Activity>
