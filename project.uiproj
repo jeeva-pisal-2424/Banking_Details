@@ -1,0 +1,6 @@
+{
+  "Name": "Banking_Details",
+  "ProjectType": "Process",
+  "Description": "Filling up banking details from sheet and shows in dialog box",
+  "MainFile": "Main.xaml"
+}
